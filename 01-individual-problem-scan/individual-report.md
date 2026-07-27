@@ -223,3 +223,27 @@ FUTURE STATE — 8 phút/ngày
 
 Fallback: AI tóm tắt thiếu/bỏ sót thông báo quan trọng → Học viên bấm vào link đính kèm (message link) trong bản digest để nhảy trực tiếp đến tin nhắn gốc trên Discord.
 ```
+
+## Chọn card muốn pitch nhất
+
+Card tôi muốn pitch nhất:
+
+```text
+Problem Card #1 — Tổng hợp và gán nhãn tập dữ liệu hình ảnh
+```
+
+Vì sao:
+
+```text
+1. Pain point rõ ràng & tần suất lặp lại cao: Việc gán nhãn thủ công tốn từ 1-2 tuần mỗi khi làm dự án AI/NCKH mới, chiếm phần lớn thời gian thô của nhóm.
+2. Dễ đo lường Impact & Success metric: Có thể tính toán chính xác số giờ tiết kiệm được (từ 14 ngày xuống 2.5 ngày) và độ chính xác của nhãn do AI đề xuất.
+3. Ranh giới Human-AI rõ ràng: AI tự động phân loại & đề xuất nhãn nháp (Vision model), con người chỉ review & tinh chỉnh nhãn sai, đảm bảo tính khả thi cao khi triển khai thực tế.
+```
+
+Câu hỏi tôi muốn nhóm challenge:
+
+```text
+1. Làm thế nào để đảm bảo AI đề xuất nhãn nháp với độ chính xác cao khi gặp tập dữ liệu có các class mới/hiếm (Out-Of-Distribution)?
+2. Ngưỡng (threshold) tin cậy nào của AI là phù hợp để chuyển sang cho con người review mà không gây quá tải cho người kiểm thử?
+```
+
