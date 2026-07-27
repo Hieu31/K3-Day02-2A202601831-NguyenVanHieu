@@ -1,28 +1,20 @@
-# 01 — Individual Problem Scan
-## Scan rộng
+# Phase 1 — Individual Scan: tìm 5+ problems (25')
 
-### 1. Tổng hợp và gán nhãn thủ công tập dữ liệu hình ảnh
-**Actor**: Team AI, Team NCKH
-**Dấu hiệu thật**: cả team phải mất 1-2 tuần để tự tổng hợp các hình ảnh, phân loại và gán nhãn.
+## Bảng scan
 
-### 2. mỗi ngày phải nhắc các thành viên trong team nộp daily
-**Actor**: Team Lead
-**Dấu hiệu thật**: mỗi ngày phải nhắn các thành viên thông qua messanger để nhắc các thành viên nộp daily task trên discord.
-
-### 3. Tổng hợp tin nhắn & Q&A trên Discord khóa học AI thực chiến mỗi ngày 
-**Actor**: Người tham gia AI thực chiến
-**Dấu hiệu thật**: Mỗi ngày phải dành ra 30 phút đến 1 tiếng đọc các tin nhắn của các bạn chia sẻ kiến thức, thông báo từ chương trình, các hỏi đáp thắc mắc của các bạn để nắm bắt được thông tin, kiến thức từ chương trình và giải đáp các thắc mắc có sẵn của mình trong chương trình AI thực chiến.
-
-### 4. Ôn lại kiến thức và chuẩn bị cho buổi học tiếp theo.
-**Actor**: Người tham gia AI thực chiến
-**Dấu hiệu thật**: Trước mỗi buổi học thì phải dành ra 1 - 2 tiếng để ôn lại kiến thức từ các slide bài giảng, các bài lab và các tài liệu liên quan để hiểu bài tốt hơn trên lớp.
-
-### 5. Onboarding người mới vào codebase/dự án lớn.
-**Actor**: Người mới tham gia vào một dự án 
-**Dấu hiệu thật**: Khi một người mới được nhảy vào một dự án của team đang làm sẵn với một codebase khổng lồ thì người mới sẽ có thể phải mất 1-2 tuần để đọc tài liệu và làm quen với codebase của team trong dự án chỉ để hiểu cơ bản, nắm bắt được các tính năng, logic hoạt động, dòng chảy dữ liệu, các nghiệp vụ, các công nghệ được sử dụng trong dự án. Điều này làm cho người mới chậm đi rất nhiều trong việc đóng góp vào dự án của team và tốn rất nhiều sự hướng dẫn từ những người cũ.
+| # | Lăng kính | Problem quan sát được | Ai chịu ảnh hưởng? | Dấu hiệu thật |
+|---|---|---|---|---|
+| 1 | Lặp lại / Tốn thời gian | Tổng hợp và gán nhãn thủ công tập dữ liệu hình ảnh | Team AI, Team NCKH | Cả team phải mất 1-2 tuần/đợt để tự tổng hợp các hình ảnh, phân loại và gán nhãn từng ảnh thủ công. |
+| 2 | Lặp lại / Pain từ người khác | Nhắc nhở thành viên nộp daily task hằng ngày | Team Lead, Thành viên nhóm | Mỗi ngày Team Lead phải nhắn từng người qua Messenger để nhắc nộp daily task trên Discord (xảy ra 5 lần/tuần). |
+| 3 | Tốn thời gian / AI có thể tốt hơn | Tổng hợp tin nhắn & Q&A trên Discord khóa học AI thực chiến mỗi ngày | Học viên AI thực chiến | Tốn 30-60 phút mỗi ngày lội tin nhắn Discord để tự lọc thông báo, kiến thức hay và câu trả lời trùng nhau. |
+| 4 | Tốn thời gian | Ôn lại kiến thức và chuẩn bị bài trước buổi học | Học viên AI thực chiến | Mất 1-2 tiếng trước mỗi buổi học đọc lại slide, bài lab và tài liệu rải rác để chuẩn bị kiến thức. |
+| 5 | Tốn thời gian / AI có thể tốt hơn | Onboarding người mới vào codebase/dự án lớn | Newbie/Fresher, Mentor/Senior | Người mới tốn 1-2 tuần đọc docs/codebase để hiểu luồng, Senior tốn 5-10 tiếng/đợt để giải thích lại quy trình cũ. |
 
 
-## Top 3
+
+# Phase 2 — Top 3 Problem Cards + draft workflow (35')
+
+## Chọn top 3
 
 | Rank | Problem | Vì sao chọn | Điều còn chưa chắc
 |---|---|---|---|
@@ -41,7 +33,7 @@ Thành viên team AI / Team Nghiên cứu khoa học chịu trách nhiệm chu�
 **Thời điểm / bối cảnh:**  
 Giai đoạn đầu của dự án AI/NCKH hoặc khi cần thu thập thêm dữ liệu thực tế cho các lớp mới.
 
-**Current workflow:**
+**Current workflow 3-7 bước:**
 1. Thu thập hình ảnh thô từ nhiều nguồn (chụp thực tế, crawl, đóng góp từ thành viên).
 2. Lọc bỏ hình ảnh lỗi, mờ, hỏng hoặc trùng lặp bằng mắt.
 3. Phân chia thư mục và xác định danh sách các lớp.
@@ -64,8 +56,12 @@ Xây dựng quy tắc (rule-based) phân loại theo metadata/tên file + sử d
 **AI hypothesis:**  
 Dùng mô hình AI (như Segment Anything / Grounding DINO / Zero-shot Vision models) để tự động nhận diện, khoanh vùng và đề xuất nhãn nháp cho hình ảnh. Con người chỉ đóng vai trò rà soát và điều chỉnh.
 
-**Quick gut:**  
-Workflow.
+**Quick gut:**
+[ ] No AI / process fix
+[ ] Rule
+[x] Workflow
+[ ] Agent
+[ ] Chưa biết
 
 ---
 
@@ -107,7 +103,7 @@ Thành viên mới (Newbie/fresher) và Mentor/Senior trong team.
 **Thời điểm / bối cảnh:**  
 Giai đoạn bàn giao (onboarding) khi có thành viên mới tham gia dự án hoặc chuyển giao mô-đun công việc mới.
 
-**Current workflow:**
+**Current workflow 3-7 bước:**
 1. Người mới nhận quyền truy cập vào repository và tài liệu dự án (nếu có).
 2. Tự đọc file Readme, tài liệu kiến trúc (architecture doc) và cấu trúc thư mục code.
 3. Chạy thử dự án ở môi trường local, tự mò luồng chạy (data flow) và logic nghiệp vụ chính.
@@ -130,8 +126,12 @@ Cập nhật tài liệu Readme chi tiết + vẽ sơ đồ kiến trúc (Archit
 **AI hypothesis:**  
 Dùng AI (RAG / Codebase Assistant như RepoQA, Copilot Workspace) index toàn bộ codebase và tài liệu hiện tại để trả lời, giải thích luồng chạy, vị trí file và nghiệp vụ theo ngữ cảnh câu hỏi của người mới.
 
-**Quick gut:**  
-Workflow.
+**Quick gut:**
+[ ] No AI / process fix
+[ ] Rule
+[x] Workflow
+[ ] Agent
+[ ] Chưa biết
 
 ---
 
@@ -172,7 +172,7 @@ Học viên / Người tham gia khóa học AI thực chiến.
 **Thời điểm / bối cảnh:**  
 Cuối ngày hoặc trước các buổi học, khi lượng tin nhắn thảo luận, hỏi đáp và thông báo trong các kênh Discord tăng cao.
 
-**Current workflow:**
+**Current workflow 3-7 bước:**
 1. Mở ứng dụng Discord và truy cập vào server của khóa học.
 2. Cuộn (scroll) thủ công qua hàng loạt tin nhắn thảo luận rời rạc trong các kênh general, share-knowledge, q-and-a.
 3. Đọc và tự lọc ra đâu là thông báo mới, đâu là kiến thức/chia sẻ hay, đâu là câu hỏi - đáp liên quan đến bài học.
@@ -194,8 +194,12 @@ Tạo kênh Discord riêng chỉ dành cho thông báo (read-only) + tạo file 
 **AI hypothesis:**  
 Dùng AI Bot (tích hợp Discord API + RAG/LLM Summary) tự động tóm tắt tin nhắn theo ngày, phân loại theo chủ đề (Thông báo, Bài học/Chia sẻ, FAQ) và cung cấp tính năng hỏi-đáp tra cứu câu trả lời cũ ngay trong Discord.
 
-**Quick gut:**  
-Workflow.
+**Quick gut:**
+[ ] No AI / process fix
+[ ] Rule
+[x] Workflow
+[ ] Agent
+[ ] Chưa biết
 
 ---
 
@@ -235,15 +239,15 @@ Problem Card #1 — Tổng hợp và gán nhãn tập dữ liệu hình ảnh
 Vì sao:
 
 ```text
-1. Pain point rõ ràng & tần suất lặp lại cao: Việc gán nhãn thủ công tốn từ 1-2 tuần mỗi khi làm dự án AI/NCKH mới, chiếm phần lớn thời gian thô của nhóm.
-2. Dễ đo lường Impact & Success metric: Có thể tính toán chính xác số giờ tiết kiệm được (từ 14 ngày xuống 2.5 ngày) và độ chính xác của nhãn do AI đề xuất.
-3. Ranh giới Human-AI rõ ràng: AI tự động phân loại & đề xuất nhãn nháp (Vision model), con người chỉ review & tinh chỉnh nhãn sai, đảm bảo tính khả thi cao khi triển khai thực tế.
+1. Pain point rõ ràng & tần suất lặp lại cao: Việc các team phải gắn nhãn dữ liệu bằng tay khi gặp một bài toán mới và không có sẵn dataset phù hợp làm nó tốn rất nhiều thời gian.
+2. Dễ đo lường Impact & Success metric: Có thể tính toán chính xác thời gian giảm của việc thu thập data và tính toán độ chính xác của việc AI gán nhãn tự động.
+3. Ranh giới Human-AI rõ ràng: AI tự động phân loại và đề xuất nhãn nháp (Vision model), con người chỉ review và tinh chỉnh nhãn sai, đảm bảo tính khả thi cao khi triển khai thực tế.
 ```
 
 Câu hỏi tôi muốn nhóm challenge:
 
 ```text
-1. Làm thế nào để đảm bảo AI đề xuất nhãn nháp với độ chính xác cao khi gặp tập dữ liệu có các class mới/hiếm (Out-Of-Distribution)?
-2. Ngưỡng (threshold) tin cậy nào của AI là phù hợp để chuyển sang cho con người review mà không gây quá tải cho người kiểm thử?
+1. Làm sao để đảm bảo AI đề xuất nhãn với độ chính xác cao khi gặp tập dữ liệu có các class mới/hiếm (Out-Of-Distribution)?
+2. Threshold nào của AI là phù hợp để chuyển sang cho con người review mà không gây quá tải cho người kiểm thử?
 ```
 
