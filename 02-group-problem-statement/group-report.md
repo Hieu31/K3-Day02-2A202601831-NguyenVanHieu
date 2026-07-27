@@ -51,7 +51,7 @@ Nhóm 4 người mang vào 12 candidate problems. Không vote ngay, mà đi qua 
 | 11 | **Minh**     | Review code hoặc Pull Request do AI hay thành viên khác viết                                 | Developer Reviewer, tác giả PR và Tech Lead         | Reviewer phải tự dựng lại ý định của tác giả trước khi kiểm tra logic; diff dài khiến thời gian review tăng                  | **AI Workflow hữu ích** để tóm tắt diff, ý định và vùng rủi ro. Tuy nhiên người review vẫn phải chịu trách nhiệm approve                                               |
 | 12 | **Minh**     | Giảng viên không biết sinh viên đang không hiểu bài cho đến khi có bài kiểm tra              | Giảng viên và sinh viên đang bị mất kiến thức nền   | Thiếu tín hiệu phản hồi trong lớp; khoảng cách từ lúc sinh viên không hiểu đến lúc giảng viên phát hiện kéo dài **3–6 tuần** | Trước hết nên dùng **No-AI process fix** như exit ticket hoặc quiz ẩn danh. AI chỉ cần thiết khi lớp đông, để phân cụm lỗi sai và hiểu nhầm phổ biến                   |
 
-#### Bước 1.2 — Gom trùng / cluster
+### Bước 1.2 — Gom trùng / cluster
 
 Nhóm gom theo **dạng công việc**, không gom theo lĩnh vực. Lý do: hai bài khác ngành nhưng cùng dạng thì giải giống nhau, còn hai bài cùng ngành mà khác dạng thì không học được gì của nhau.
 
@@ -69,7 +69,7 @@ Bốn điều nhóm rút ra khi cluster xong:
 3. **Cluster C mới là chỗ đáng tiền, nhưng cả nhóm suýt bỏ qua.** Phản xạ đầu tiên của mọi người là đi tìm bài tốn nhiều giờ nhất. Khi tách C ra thì mới thấy: tăng tốc khâu gõ liệu chỉ làm cho việc **quyết định sai diễn ra nhanh hơn**.
 4. **#5 và #6 cùng người, cùng cluster A, nhưng khác nhau ở một điểm quyết định.** #5 sai thì ra số liệu sai — kiểm được bằng đối chiếu tổng. #6 sai thì **loại nhầm một con người, và không ai biết là đã loại nhầm**. Cùng dạng kỹ thuật, khác hẳn về hậu quả.
 
-#### Bước 1.3 — Shortlist
+### Bước 1.3 — Shortlist
 
 Hỏi:
 
@@ -95,7 +95,7 @@ Ba candidate **suýt vào shortlist** và lý do bị gạt — ghi lại vì đ
 
 Còn lại bị loại vì lý do gọn hơn: **#1, #2** trùng dạng với #8/#9 nhưng khó đo hơn; **#3** là bài Rule + OCR, không cần AI; **#4** phụ thuộc gu cá nhân, không có tiêu chí "highlight tốt" để kiểm; **#10** phần đáng giải là automation thuần (Playwright/Cypress) chứ không phải AI, và nhóm không có ai làm QA; **#12** exit ticket giấy giải xong phần lớn — nhóm giữ lại làm ví dụ đối chiếu cho nguyên tắc "không cần AI vẫn là kết luận tốt".
 
-#### Bước 1.4 — Score để đồng thuận
+### Bước 1.4 — Score để đồng thuận
 
 Chấm 1-5. Điểm không cần tuyệt đối; mục tiêu là ép nhóm nói rõ lý do.
 
@@ -262,7 +262,7 @@ Nhóm làm cả ba: 2 interview HR ngoài nhóm và mở trực tiếp dữ li�
 2. **Phần dễ khoe nhất lại là phần đã có lời giải sẵn.** Trích xuất CV là bài toán ATS đã làm nhiều năm. Nếu nhóm chỉ dừng ở đó thì bài này không có gì mới.
 3. **Câu chưa trả lời được, và nó quan trọng hơn mọi số đã có:** công ty Dương thật sự gọi screening bao nhiêu người mỗi đợt — 5 hay 30-50? Card nói mail mời cho Top 10-15% (~5 người), nhưng Phần 4 lại ghi 30-50 người. Nếu là 5 thì **toàn bộ lý do tồn tại của AI Interview Agent sụp**. Nhóm ghi đây là câu hỏi số 1 phải đi hỏi Dương trước khi làm pilot, không phải câu để đoán.
 
-#### Bước 2.2 — Research giải pháp đã có
+### Bước 2.2 — Research giải pháp đã có
 
 | Nguồn / tool / case | Link | Họ giải quyết phần nào? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
 |---|---|---|---|---|---|
@@ -820,7 +820,7 @@ Chấm riêng hai thành phần, vì gộp lại thì phần yếu bị phần m
 - **Sai sót nằm trong nội bộ và có đường sửa.** Cổng độ tin cậy chặn parse hỏng; điểm lệch thì người sửa tay ngay ở màn hình review và điểm bị sửa được ghi lại để hiệu chỉnh rubric.
 - **Không khoá chân.** Kho hồ sơ export được ra `.xlsx` đúng các cột đang dùng, hệ thống chết thì quay về Excel như cũ.
 
-#### Lý do Not Yet cho Agent — và điều kiện để chuyển thành Go:
+#### Lý do Not Yet cho Agent:
 
 Lập luận kỹ thuật cho Agent đứng vững: phỏng vấn 2 chiều thật sự cần AI tự quyết bước tiếp theo. Vấn đề không nằm ở "làm được không" mà ở **"có đáng làm không"**, và câu đó chưa trả lời được.
 
@@ -848,7 +848,7 @@ ro nhất trên nền chưa có gì.
 
 Đây không phải sự thận trọng cho có: **chính nhóm đã tự ràng buộc điều kiện quay đầu này từ Phần 1**, và Phần 3 đã viết thẳng *"nếu thực tế chỉ phỏng vấn 5 người thì cả quyết định chọn Agent sụp đổ"*. Chọn Go trong khi chưa loại trừ được kịch bản đó là tự lừa mình.
 
-#### Pilot nhỏ nhất — cắt theo lát, không làm hết một lượt:
+#### Pilot nhỏ nhất:
 ```text
 TUẦN 1  RULE — link tự chọn slot phỏng vấn (B1)
         Rẻ nhất, rủi ro gần bằng không, cắt ngay 1-2 ngày độ trễ mỗi ứng viên.
